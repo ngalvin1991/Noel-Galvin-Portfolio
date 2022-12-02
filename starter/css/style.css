@@ -2,20 +2,32 @@
   box-sizing: border-box;
 }
 
+:root {
+  --outside: orange;
+  --whitetxt: white;
+  --hdtext: rgb(2, 3, 2);
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.5;
+  color: var(--whitetxt);
+  background-color: var(--outside);
+  
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.h1-header {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 50px;
+
+}
+
+
+
 }
 
 p {

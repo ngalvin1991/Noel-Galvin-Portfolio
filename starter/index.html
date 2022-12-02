@@ -5,41 +5,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Noel Galvin / Portfolio</title>
+  <!--changed title-->
+  <link rel="stylesheet" href="../starter/css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
-    <nav>
+    <section>
+    <h1>Noel Galvin</h1>
+    <!--changed name (above) and added a profile image and alt attribute-->
+    <img class="profile-picture" src="../starter/images/Profile Picture.png" alt="Profile picture of Noel Galvin"</img>
+    </section>
+    
+    <nav class="nav-bar">
+      <section id="about-me" class="nav-section">
+      <!--added nav semantic and class for css-->
+      <ul>
+        <li>
+          <!--added <a href to link to each section of the page-->
+          <a href="#about-me">About Me</a>
+        </li>
+        <li>
+         <a href="#recent-projects">Recent Projects</a>
+        </li>
+        <li>
+         <a href="#contact-me">Contact Me</a>
+        </li>
+      </ul>
+    </section>
     </nav>
   </header>
-
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
-  </section>
-
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
+    
+    <section class="about-me">
+      <h2 class="main-headings">About Me</h2>
+      <p>
+        I am a 31 year old Front-End Web Developer from South London, UK. My journey began in 2022
+        when I decided I wanted to change careers. I want to develop the best websites possible using 
+        the cleanest code. 
+      </p>
     </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <section class="hero-banner">
+      <div class="banner-align">
+        <h2>Something Funny...</h2>
+      </div>
     </section>
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+  <main>
+    <section id="recent-projects" class="project-section" >
+      <h2 class="main-headings">Recent Projects</h2>
+
+      <figure>
+        <h3 class="project-header">Horiseon</h3>
+        <a href="https://ngalvin1991.github.io/Horiseon-Webpage/"><img class="large-img" src="../starter/images/Galaxy.jpg" alt="galaxy system"></img></a>
+      </figure>
+
+      <figure>
+        <h3 class="other-projects">Coming Soon</h3>
+        <a href=""><img class="op-images" src="../starter/images/Computer code cup.jpg" alt="Computer with code on screen and a cup in front of computer"></img></a>
+      </figure>
+
+      <figure>
+        <h3 class="other-projects">Coming Soon</h3>
+        <a href=""><img class="op-images" src="../starter/images/Beach.jpg" alt="Beach with birds flying"></img></a>
+      </figure>
+
+      <figure>
+        <h3 class="other-projects">Coming Soon</h3>
+        <a href=""<img class="op-images" src="../starter/images/Computer Code.jpg" alt="Computer with code"></img></a>
+      </figure>
+
+      <figure>
+        <h3 class="other-projects">Coming Soon</h3>
+        <a href=""<img class="op-images" src="../starter/images/Stars.jpg" alt="person standing under the stars"></img></a>
+      </figure>
+      
     </section>
   </main>
+   
+
+    <!-- contact -->
+    <Footer>
+      <!--changed section id to link to the nav bar-->
+    <section id="contact-me" class="page-section contact">
+      <h3>Contact Me</h3>
+      <ul>
+        <!--included email address and links to Github and LinkedIn below-->
+        <li><strong>Email:</strong> <a href="noelgalvin1991@gmail.com">noelgalvin1991@gmail.com</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/ngalvin1991">github.com/ngalvin1991</a></li>
+        <li><strong>LinkedIn:</strong></li>
+      </ul>
+    </section>
+  </Footer>
+
+  
 </body>
 
 </html>

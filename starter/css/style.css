@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --outside: orange;
   --whitetxt: white;
@@ -9,26 +5,187 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  line-height: 1.5;
   color: var(--whitetxt);
-  background-color: var(--outside);
+  background-color: lightgrey;
   
 }
 
-.h1-header {
-  margin: 0px;
+#header-name {
+  display:flex;
+  border: 5px solid var(--whitetxt);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0px;
-  text-align: center;
+  width: auto;
+  background-color: var(--hdtext);
+  background-image: url("../images/Profile\ Picture.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  
+}
+
+.h1-text {
+  margin-left: 762px;
+  justify-content: center;
+  align-items: center;
   font-size: 50px;
+  background-color: rgba(225, 225, 225, 0.2);
+  border: 2px solid rgba(225, 225, 225, 0.2);
+  background-position: center;
+}
+
+.nav{
+  display: flex;
+  border: solid var(--whitetxt);
+  background-color: var(--hdtext);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
 
 }
 
+.links {
+  padding: 10px;
+  margin-left: 1px;
+  margin: auto;
+  text-decoration: none;
+  justify-content: space-between;
+}
 
+.links a {
+  padding: 10px;
+  
+}
+
+.hero-banner {
+  display: block;
+  border: 1px var(--whitetxt) solid;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.banner-align {
+  display: block;
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
 
 }
+
+.banner-align h2 {
+  font-style: italic;
+  font-size: 20px;
+  text-align:end;
+  justify-content:center;
+  padding-right: 25px;
+}
+
+#main-headings {
+  border: 5px solid var(--whitetxt);
+  position:relative;
+  text-align: center;
+  background-color: var(--hdtext);
+  margin: 0;
+  padding: 25px;
+  max-width: 350px;
+  z-index: 25 ;
+
+}
+
+.am-container {
+  display: flex;
+  height: 200px;
+  background-color: var(--hdtext);
+  border: 5px var(--whitetxt) solid;
+}
+
+
+.h3 {
+  text-decoration: none;
+  color: var(--whitetxt);
+ 
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+  color: var(--whitetxt);
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--whitetxt);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+
+#project-grid {
+  margin: 25x 15%;
+  padding: 25px;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  grid-template-rows:35% 0.3;
+  grid-template-columns: 65% 35%;
+  grid-template-areas:
+"fp fp"
+"fp tp tp"
+"ffp fffp"
+}
+
+#first-p {
+  grid-area: fp;
+  background-image: url("../images/Galaxy.jpg");
+}
+
+#second-p {
+  grid-area: sp;
+  background-image: url("../images/Computer\ code\ cup.jpg");
+}
+
+#third-p {
+  grid-area: tp;
+  background-image: url("../images/Beach.jpg");
+}
+
+#fourth-p {
+  grid-area: ffp;
+  background-image: url("../images/Stars.jpg");
+}
+
+#fifth-p {
+  grid-area: fffp;
+  background-image: url("../images/Computer\ Code.jpg"); 
+}
+
+.project-gridarea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  
+}
+
+
+#contact-me {
+  display:inline-block;
+  justify-content: end;
+}
+
 
 p {
   margin: 0;

@@ -2,6 +2,7 @@
   --outside: orange;
   --whitetxt: white;
   --hdtext: rgb(2, 3, 2);
+  --txtbg: rgba(225, 225, 225, 0.2)
 }
 
 body {
@@ -32,9 +33,9 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  background-color: rgba(225, 225, 225, 0.2);
+  background-color: var(--txtbg);
   border: 2px solid rgba(225, 225, 225, 0.2);
-  background-position: center;
+  background-position: center;  
 }
 
 .nav{
@@ -87,64 +88,73 @@ body {
   padding-right: 25px;
 }
 
-#main-headings {
-  border: 5px solid var(--whitetxt);
-  position:relative;
-  text-align: center;
-  background-color: var(--hdtext);
-  margin: 0;
-  padding: 25px;
-  max-width: 350px;
-  z-index: 25 ;
-
-}
-
 .am-container {
   display: flex;
-  height: 200px;
+  height: 150px;
   background-color: var(--hdtext);
   border: 5px var(--whitetxt) solid;
 }
 
-
-.h3 {
-  text-decoration: none;
-  color: var(--whitetxt);
- 
+.am-heading {
+  display: flex;
+  padding: 15px;
+  border: 5px solid var(--whitetxt);
+  font-size: 15px;
+  align-content: center;
 }
 
-a:hover{
-  text-decoration: none;
+.about-me {
+  padding-top: 20px;
+  width: 100%;  
+  border: 5px solid var(--whitetxt);
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  justify-content: space-evenly;
+  line-height: 30px;
 }
 
-a:active {
-  text-decoration: none;
-  color: var(--whitetxt);
+.main-content {
+  display: flex;
+  height: 750px;
+  background-color: var(--hdtext);
 }
 
-a:visited {
-  text-decoration: none;
-  color: var(--whitetxt);
+.rp-heading {
+  display: flex;
+  margin-right: -54px;
+  border: 5px solid var(--whitetxt);
+  font-size: 15px;
+  padding: 10px;
+  align-content: center;
+
 }
 
-a:link {
-  text-decoration: none;
+.rp-heading h2 {
+  margin-top: 170%;
+  text-align:start;
 }
 
-
-#project-grid {
-  margin: 25x 15%;
-  padding: 25px;
+#sectGrid {
   display: grid;
-  justify-content: center;
   width: 100%;
-  height: 250px;
-  grid-template-rows:35% 0.3;
-  grid-template-columns: 65% 35%;
+  border: 5px var(--whitetxt) solid;
+  grid-template-rows: 75% 20% 10%;
+  grid-template-columns: 75% 25%;
   grid-template-areas:
-"fp fp"
-"fp tp tp"
-"ffp fffp"
+  "fp sp"
+  "fp ffp"
+  "tp fffp"
+
+}
+
+.projectGridArea {
+  border: solid 5px var(--whitetxt);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 25px;
+  display: flex;
 }
 
 #first-p {
@@ -172,21 +182,43 @@ a:link {
   background-image: url("../images/Computer\ Code.jpg"); 
 }
 
-.project-gridarea {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: grid;
-  
-}
-
 
 #contact-me {
   display:inline-block;
   justify-content: end;
 }
 
+footer{
+  display: flex;
+  border: solid var(--whitetxt);
+  background-color: var(--hdtext);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
 
 p {
   margin: 0;
 }
+
+a:hover {
+  text-decoration: none;
+  color: var(--txtbg);
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--whitetxt);
+}
+
+a:link {
+  text-decoration: none;
+}
+
